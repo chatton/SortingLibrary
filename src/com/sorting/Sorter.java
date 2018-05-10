@@ -10,7 +10,7 @@ public interface Sorter<T extends Comparable<T>> {
 
     default Collection<T> sorted(List<T> list){
         final List<T> other = new ArrayList<>(list);
-        this.sort(other);
+        sort(other);
         return other;
     }
 }
